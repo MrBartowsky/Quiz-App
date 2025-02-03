@@ -21,8 +21,15 @@ body{
     transform: translate(-50%, -50%);
     box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2)
                 0px 6px 20px 0 rgba(0,0,0,0.19);
-    pointer-events: none;
-    transform: translate(-50%, -50%) scale(0.9 );    ;    
+    pointer-events: cursor;
+    transform: translate(-50%, -50%) scale(0.9 );   
+}
+
+.info_box.activeInfo {
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1); 
 }
 
 /*Start Quiz Button Styling*/
@@ -105,10 +112,10 @@ body{
 
 .buttons button.quit {
     color: #007bff;
-    utr
 }
 
-.buttons button.quit:hover {
+
+.buttons button.quit:hover{
     color: #fff;
     background: #007bff;
 }

@@ -28,8 +28,5 @@ let que_count = 0;
 function showQuestions(){
         const que_text = document.querySelector(".que_text");
         let que_tag = '<span>'+ questions[que_count].numb + ". " + questions[que_count].question +'</span>';
-        que_text.innerHTML = que_tag; //passing the question text 
-
-
 
 }
